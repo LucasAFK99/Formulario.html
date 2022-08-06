@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css" media=""> 
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo"><strong>Cadastro de Clientes</strong></h1>
+        <p id="subtitulo"><strong>Complete os dados a baixo</strong></p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div id="dados">
+                <label for="Nome Completo"><strong>Nome Completo</strong></label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="nome"><strong>CPF</strong></label>
+            <input type="cpf" name="cpf" id="cpf" required>
+            </div><br>
+            <label for="nome"><strong>Data de Nascimento</strong></label>
+            <input type="date" name="date" id="date" required>
+            <label for="Email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+            
+        </fieldset>
+        <div class="campo">
+         <label for="nome"><strong>Escolaridade</strong></label>
+        <label>
+            <input type="radio" name="escolaridade" value="Fundamental" checked>Fundamental
+        </label>
+        <label for="nome">
+        <input type="radio" name="escolaridade" value="Ensino médio">Ensino Médio
+        </label>
+        <label for="nome">
+        <input type="radio" name="escolaridade" value="Ensino Superior">Ensino Superior 
+        <br>
+        <label for="status"><strong>Status</strong></label>
+            <select id="status">
+                <option selected disabled value="">Selecione...</option>
+                <option>Incompleto</option>
+                <option>Cursando</option>
+                <option>Completo</option>
+            </select>
+        </label><br>
+
+        <div class="campo">
+            <label for="nome"><strong>Endereço</strong></label>
+            <input type="logradouro" name="logradouro" id=" logradouro">
+            <label for="nome"><strong>Nº</strong></label>
+            <input type="número" name="número" id="número">
+            <label for="nome"><strong>CEP</strong></label>
+            <input type="cep" name="cep" id="cep">
+            <label for="nome"><strong>Complemento</strong></label>
+            <input type="nome" name="Complemento" id="Complemento">
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+            <label for="nome"><strong>Selecione a forma de pagamento</strong></label><br>
+            <input type="checkbox" id="forma1" name="Dinheiro" value="Dinheiro">
+            <label for="forma1">Dinheiro</label>
+            <input type="checkbox" id="forma2" name="Débito" value="Débito">
+            <label for="forma2">Débito</label>
+            <input type="checkbox" id="forma3" name="Crédito" value="Crédito">
+            <label for="forma3">Crédito</label>
+            <input type="checkbox" id="forma4" name="pix" value="pix">
+            <label for="forma4">PIX</label>
+            <input type="checkbox" id="forma5" name="transferência" value="transferência">
+            <label for="forma5">Transferência</label>
+            <input type="checkbox" id="forma6" name="depósito bancário" value="depósito bancário">
+            <label for="forma">Depósito Bancário</label>
+        </div>
+
+    </fieldset>
+        <div class="campo">
+            <label for="nome"><strong>Descreva seus objetivos</strong></label>
+            <textarea rows="6" style="width: 20cm" id="objetivos" name="objetivos"></textarea>
+        </div>
+        </div>
+        <button class="botao" type="submit"><strong>Concluido</strong> </button>
+    </form>
+</body>
+</html>
